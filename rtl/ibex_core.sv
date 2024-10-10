@@ -437,7 +437,9 @@ module ibex_core import ibex_pkg::*; import cheri_pkg::*; #(
   /* verilator lint_on UNOPTFLAT */
   /* verilator lint_on IMPERFECTSCH */
 
+  /* verilator lint_off UNOPTFLAT */
   logic          rv32_lsu_req;
+  /* verilator lint_on UNOPTFLAT */
   logic          rv32_lsu_we;
   logic [1:0]    rv32_lsu_type;
   logic [31:0]   rv32_lsu_wdata;
